@@ -38,7 +38,7 @@ const Search = ({onSearchChange}) => {
         // 'loadOptions is a function that loads the possible selections into the combobox while the searchbar is being updated.'
         <AsyncPaginate
             placeholder= "Search for city"
-            debounceTimeout= {600}  // The amount of time you want the debounce function to wait after the last received.
+            debounceTimeout= {400}  // The amount of time you want the debounce function to wait after the last received.
             value= {search}
             onChange= {handleOnChange}  // OnSelection
             loadOptions= {loadOptions}  // Its executed, lets say, onKeyPress.
